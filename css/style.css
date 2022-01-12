@@ -27,7 +27,7 @@ a {
 .header__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 20px;
 
 }
 
@@ -47,12 +47,13 @@ a {
 .menu__list {
     display: flex;
 }
+
 .menu__item {
     list-style-type: none;
 }
 
-.menu__item +.menu__item {
-margin-left: 30px;
+.menu__item + .menu__item {
+    margin-left: 30px;
 }
 
 .menu__link {
@@ -67,4 +68,120 @@ margin-left: 30px;
 .menu__link:hover {
     border-bottom: 1px solid #001E64;
 }
+
+.header__content {
+    background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    padding-bottom: 20px;
+    min-height: calc(100vh - 50px)
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color:  #001E64;
+    font-size: 72px;
+    line-height: 95px;
+    max-width: 589px;
+    padding-top: 170px;
+    padding-left: 112px;
+    margin-bottom: 60px;
+}
+
+.header-slider {
+    max-width: 522px;
+    padding-left: 112px;
+    padding-top: 57px;
+    padding-bottom: 135px;
+
+}
+
+.header-slider__text {
+    margin-bottom: 25px;
+    font-size:18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    left: 40px;
+
+}
+
+.slick-prev {
+    top: 0;
+}
+
+.slick-next {
+    bottom: 0;
+}
+
+.slick-dots {
+    list-style-type: none;
+    position: absolute;
+    left: 35px;
+    top: 58px;
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slick-dots button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.slick-dots button::before {
+    content:'0';
+}
+
+.slick-active button {
+    opacity: 1;
+}
+
+.header__content-btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 23px;
+    line-height: 32px;
+    padding: 14px 88px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    margin-left: 112px;
+    display: inline-block;
+    transform: translateY(-100px);
+    position: absolute;
+}
+
+.header__content-box {
+    display: flex;
+    margin-left: 100%;
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+
+}
+
+.header__content-link--active{
+ font-weight: 700;
+}
+
 
