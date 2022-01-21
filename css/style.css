@@ -82,7 +82,7 @@ a {
 .title {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
-    color:  #001E64;
+    color: #001E64;
     font-size: 72px;
     line-height: 95px;
     max-width: 589px;
@@ -101,7 +101,7 @@ a {
 
 .header-slider__text {
     margin-bottom: 25px;
-    font-size:18px;
+    font-size: 18px;
     line-height: 22px;
     color: #fff;
 }
@@ -148,7 +148,7 @@ a {
 }
 
 .slick-dots button::before {
-    content:'0';
+    content: '0';
 }
 
 .slick-active button {
@@ -180,8 +180,31 @@ a {
 
 }
 
-.header__content-link--active{
- font-weight: 700;
+.header__content-link--active {
+    font-weight: 700;
+}
+
+.product {
+    padding-top: 100px;
+}
+
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__name {
+    width: 50px;
+    text-align: center;
+}
+
+.product__content {
+    width: 600px;
+
+}
+
+.product__name-item+ .product__name-item {
+   margin-top: 30px;
 }
 
 
