@@ -12,15 +12,16 @@ $(function () {
         asNavFor: '.product__content',
         vertical: true,
 
-        prevArrow: '<button type="button" class="product-prev"> <img src="./images/product-prev.png" alt=""></button>',
-        nextArrow: '<button type="button" class="product-next"><img src="./images/product-next.png" alt=""></button>'
+        prevArrow: '<button type="button" class="product-prev"> <img src="./images/product-prev.png" alt="icon-prev"></button>',
+        nextArrow: '<button type="button" class="product-next"><img src="./images/product-next.png" alt="icon-next"></button>'
     })
 
     $('.product__content').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.product__name',
-        fade: true
+        fade: true,
+        arrows: false,
     })
 });
 
