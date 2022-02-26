@@ -169,6 +169,13 @@ a {
     display: inline-block;
     transform: translateY(-100px);
     position: absolute;
+    transition: all .3s;
+}
+
+
+.header__content-btn:hover {
+    color: #001E64;
+    background-color: #fff;
 }
 
 .header__content-box {
@@ -205,8 +212,8 @@ a {
     text-align: center;
 }
 
-.product__name-item+ .product__name-item {
-   margin-top: 30px;
+.product__name-item + .product__name-item {
+    margin-top: 30px;
 }
 
 .product-prev {
@@ -288,7 +295,14 @@ a {
     border: 1px solid #001E64;
     border-radius: 20px;
     cursor: pointer;
+    transition: all .3s;
 }
+
+.product__content-btn:hover {
+    color: #fff;
+    background-color: #001E64;
+}
+
 
 
 .seafood__box-block {
@@ -370,6 +384,76 @@ a {
     font-size: 18px;
     margin: 0 auto;
     line-height: 29px;
+}
+
+
+.contacts {
+    background-image: url(../images/contacts.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.contacts__box {
+    margin-left: auto;
+    width: 390px;
+    background-color: #fff;
+    padding: 33px 0 33px 10px;
+}
+
+.contacts__box-text {
+    width: 195px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001E64;
+}
+
+.contacts__box-list {
+    list-style: none;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px
+}
+
+.contacts__box-item {
+    margin-top: 30px;
+}
+
+.footer {
+    padding: 25px 0 11px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 45px 0 23px;
+}
+
+.footer__inner .menu {
+    padding-bottom: 30px;
+}
+
+.footer-social__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px;
+}
+
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
+
+
+.footer-social__link path {
+   transition: all .3s;
+
+}
+
+.footer-social__link:hover path {
+    fill: #001E64;
+
 }
 
 
